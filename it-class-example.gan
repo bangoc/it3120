@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Dự án mở lớp học mới" company="" webLink="http://" view-date="2020-03-22" view-index="2" gantt-divider-location="565" resource-divider-location="300" version="2.8.10" locale="en_US">
+    <description/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd11" name="Outline number" width="47" order="0"/>
+        <field id="tpd3" name="Name" width="352" order="1"/>
+        <field id="tpd4" name="Begin date" width="81" order="2"/>
+        <field id="tpd5" name="End date" width="81" order="3"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Xác định nhà cung cấp" color="#8cb6ce" meeting="false" start="2020-03-23" duration="14" complete="100" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+            <depend id="80" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="Kiểm tra tài liệu đào tạo" color="#8cb6ce" meeting="false" start="2020-03-23" duration="42" complete="100" thirdDate="2020-03-23" thirdDate-constraint="1" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="So sánh các nhà cung cấp" color="#8cb6ce" meeting="false" start="2020-05-20" duration="14" complete="22" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" name="Đàm phán với nhà cung cấp" color="#8cb6ce" meeting="false" start="2020-06-09" duration="21" complete="0" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+            <depend id="75" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="Biên soạn thông tin quảng bá" color="#8cb6ce" meeting="false" start="2020-04-10" duration="28" complete="13" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" name="Công bố thông tin" color="#8cb6ce" meeting="false" start="2020-05-20" duration="14" complete="0" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="15" name="Tạo và điều hành khảo sát" color="#8cb6ce" meeting="false" start="2020-06-09" duration="20" complete="0" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+            <depend id="75" type="2" difference="0" hardness="Strong"/>
+            <task id="25" name="Tạo phiên bản khảo sát đầu tiên" color="#8cb6ce" meeting="false" start="2020-06-09" duration="4" complete="0" thirdDate="2020-06-09" thirdDate-constraint="0" expand="true">
+                <depend id="29" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="29" name="Kiểm duyệt phiên bản khảo sát đầu tiên" color="#8cb6ce" meeting="false" start="2020-06-15" duration="3" complete="0" thirdDate="2020-06-09" thirdDate-constraint="0" expand="true">
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+                <depend id="51" type="2" difference="0" hardness="Strong"/>
+                <task id="38" name="Kiiểm duyệt bởi giám đốc đào tạo IT" color="#8cb6ce" meeting="false" start="2020-06-15" duration="3" complete="0" thirdDate="2020-06-09" thirdDate-constraint="0" expand="true"/>
+                <task id="40" name="Kiểm duyệt bởi người tài trợ dự án" color="#8cb6ce" meeting="false" start="2020-06-15" duration="3" complete="0" thirdDate="2020-06-15" thirdDate-constraint="0" expand="true"/>
+                <task id="43" name="Kiểm duyệt bởi người đại diện học viên" color="#8cb6ce" meeting="false" start="2020-06-15" duration="3" complete="0" thirdDate="2020-06-15" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="47" name="Kiểm tra thí điểm phiên bản đầu tiên" color="#8cb6ce" meeting="false" start="2020-06-18" duration="4" complete="0" thirdDate="2020-06-09" thirdDate-constraint="0" expand="true">
+                <depend id="51" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="51" name="Đưa các điều chỉnh vào khảo sát" color="#8cb6ce" meeting="false" start="2020-06-24" duration="3" complete="0" thirdDate="2020-06-09" thirdDate-constraint="0" expand="true">
+                <depend id="60" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="56" name="Lên danh sách chuyển phát" color="#8cb6ce" meeting="false" start="2020-06-09" duration="3" complete="0" thirdDate="2020-06-09" thirdDate-constraint="0" expand="true">
+                <depend id="60" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="60" name="Gửi bản khảo sát theo danh sách" color="#8cb6ce" meeting="false" start="2020-06-29" duration="3" complete="0" thirdDate="2020-06-09" thirdDate-constraint="0" expand="true">
+                <depend id="64" type="2" difference="0" hardness="Strong"/>
+                <depend id="71" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="64" name="Gửi thông điệp nhắc nhở" color="#8cb6ce" meeting="false" start="2020-07-02" duration="3" complete="0" thirdDate="2020-06-09" thirdDate-constraint="0" expand="true"/>
+            <task id="71" name="Thu thập các khảo sát  hoàn thiệ" color="#8cb6ce" meeting="false" start="2020-07-02" duration="3" complete="0" thirdDate="2020-06-09" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="75" name="Phân tích các kết quả và lựa chọn nhà cung cấp" color="#8cb6ce" meeting="false" start="2020-07-08" duration="14" complete="0" thirdDate="2020-06-09" thirdDate-constraint="0" expand="true">
+            <depend id="83" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="80" name="Xây dựng các lớp học mới" color="#8cb6ce" meeting="false" start="2020-04-10" duration="77" complete="19" thirdDate="2020-03-16" thirdDate-constraint="0" expand="true">
+            <depend id="83" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="83" name="Phát triển các tùy chọn khóa học" color="#8cb6ce" meeting="false" start="2020-07-28" duration="21" complete="0" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Alan" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Barbara" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="David" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="75" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="80" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="83" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
