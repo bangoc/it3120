@@ -16,9 +16,9 @@ public class App {
     final DataSource dataSource = createDataSource();
     createSchema(dataSource);
     final CustomerDAM customerDAM = new CustomerDAM(dataSource);
-    customerDAM.add(new Customer(1, "Nguyen", "Van A"));
-    customerDAM.add(new Customer(2, "Tran", "Thi B"));
-    customerDAM.add(new Customer(3, "Bui", "Xuan C"));
+    customerDAM.add(1, "Nguyen", "Van A");
+    customerDAM.add(2, "Tran", "Thi B");
+    customerDAM.add(3, "Bui", "Xuan C");
     System.out.println("customerDAM.getAllCustomers(): ");
     try (Stream<Customer> customerStream = customerDAM.getAll()) {
       customerStream.forEach((customer) -> System.out.println(customer));

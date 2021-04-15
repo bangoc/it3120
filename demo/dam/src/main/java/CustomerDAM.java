@@ -93,6 +93,12 @@ public class CustomerDAM {
     return true;
   }
 
+  public boolean add(final int id, 
+                     final String firstName, 
+                     final String lastName) throws Exception {
+    return add(new Customer(id, firstName, lastName));
+  }
+
   public boolean update(Customer customer) throws Exception {
     Connection connection = getConnection();
     PreparedStatement statement =
