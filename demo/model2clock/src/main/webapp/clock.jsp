@@ -1,8 +1,13 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"
+         import = "java.util.*"
+%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
 <body onload="drawClock()">
+<%
+  response.setIntHeader("Refresh", 1);
+%>
 
 <canvas id="canvas" width="400" height="400"
         style="background-color:lightskyblue">

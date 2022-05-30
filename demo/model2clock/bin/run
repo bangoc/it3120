@@ -1,0 +1,2 @@
+mvn jetty:run -Djetty.http.port=8889
+localhost:8889/model2clock/clock
