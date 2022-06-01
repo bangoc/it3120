@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0)
+project(cpp-mvc-clock)
+find_package(wxWidgets 3.0 REQUIRED)
+include(${wxWidgets_USE_FILE})
+add_executable(clock main.cpp)
+target_link_libraries(clock ${wxWidgets_LIBRARIES})
