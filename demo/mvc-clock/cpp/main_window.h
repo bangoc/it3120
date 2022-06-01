@@ -24,7 +24,7 @@ public:
 
 private:
   ClockModel *model = new ClockModel();
-  wxPanel* view = new ClockView(this, model, wxID_ANY, {10, 10}, {380, 200});
+  ClockView* view = new ClockView(this, model, wxID_ANY, {10, 10}, {380, 200});
   ClockController *controller = new ClockController(view, model);
   wxPanel* control = new wxPanel(this, wxID_ANY, {10, 220}, {380, 60});
   wxButton* button_tick = new wxButton(control, wxID_ANY, "Tick", {80, 10});

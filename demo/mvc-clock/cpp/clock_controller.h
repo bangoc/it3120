@@ -10,10 +10,10 @@
 
 class ClockController {
 private:
-  wxPanel *view = nullptr;
+  ClockView *view = nullptr;
   ClockModel *model = nullptr;
 public:
-  ClockController(wxPanel *my_view, ClockModel *my_model):
+  ClockController(ClockView *my_view, ClockModel *my_model):
       view(my_view), model(my_model) {
   }
   void Tick() {
