@@ -1,6 +1,6 @@
-# Minh họa kiến trúc MVC
+# Kiến trúc Document-View?
 
-Triển khai trò chơi đoán số theo kiến trúc MVC
+Giản lược triển khai MVC với C++, chỉ giữ lại Model và View / Tích hợp View với Controller.
 
 ## Các biểu đồ
 
