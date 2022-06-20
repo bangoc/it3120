@@ -15,27 +15,27 @@ public class App {
   public static void main(final String[] args) throws Exception {
     final DataSource dataSource = createDataSource();
     createSchema(dataSource);
-    final CustomerDAM customerDAM = new CustomerDAM(dataSource);
-    customerDAM.add(1, "Nguyen", "Van A");
-    customerDAM.add(2, "Tran", "Thi B");
-    customerDAM.add(3, "Bui", "Xuan C");
-    System.out.println("customerDAM.getAllCustomers(): ");
-    try (Stream<Customer> customerStream = customerDAM.getAll()) {
+    final CustomerDAO customerDAO = new H2CustomerDAO(dataSource);
+    customerDAO.add(1, "Nguyen", "Van A");
+    customerDAO.add(2, "Tran", "Thi B");
+    customerDAO.add(3, "Bui", "Xuan C");
+    System.out.println("customerDAO.getAllCustomers(): ");
+    try (Stream<Customer> customerStream = customerDAO.getAll()) {
       customerStream.forEach((customer) -> System.out.println(customer));
     }
-    System.out.println("customerDAM.getCustomerById(2): " + customerDAM.getById(2));
+    System.out.println("customerDAO.getCustomerById(2): " + customerDAO.getById(2));
     final Customer customer = new Customer(4, "Vo", "Van D");
-    customerDAM.add(customer);
-    System.out.println("customerDAM.getAllCustomers(): " + customerDAM.getAll());
+    customerDAO.add(customer);
+    System.out.println("customerDAO.getAllCustomers(): " + customerDAO.getAll());
     customer.setFirstName("La");
     customer.setLastName("Van F");
-    customerDAM.update(customer);
-    System.out.println("customerDAM.getAllCustomers(): ");
-    try (Stream<Customer> customerStream = customerDAM.getAll()) {
+    customerDAO.update(customer);
+    System.out.println("customerDAO.getAllCustomers(): ");
+    try (Stream<Customer> customerStream = customerDAO.getAll()) {
       customerStream.forEach((cust) -> System.out.println(cust));
     }
-    customerDAM.delete(customer);
-    System.out.println("customerDAM.getAllCustomers(): " + customerDAM.getAll());
+    customerDAO.delete(customer);
+    System.out.println("customerDAO.getAllCustomers(): " + customerDAO.getAll());
     deleteSchema(dataSource);
   }
 
