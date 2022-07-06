@@ -1,4 +1,1 @@
-# it3120
-Bài giảng học phần it3120
-
-Refactor demo/DAM
+# it3120 - Phân tích và thiết kế hệ thống
